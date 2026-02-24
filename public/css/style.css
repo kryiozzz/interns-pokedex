@@ -259,279 +259,136 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* Type Badge Colors */
-.type-normal,
-.type-btn.type-normal {
-    background: var(--type-normal);
-}
-
-.type-fire,
-.type-btn.type-fire {
-    background: var(--type-fire);
-}
-
-.type-water,
-.type-btn.type-water {
-    background: var(--type-water);
-}
-
-.type-electric,
-.type-btn.type-electric {
-    background: var(--type-electric);
-    color: #333;
-}
-
-.type-grass,
-.type-btn.type-grass {
-    background: var(--type-grass);
-}
-
-.type-ice,
-.type-btn.type-ice {
-    background: var(--type-ice);
-    color: #333;
-}
-
-.type-fighting,
-.type-btn.type-fighting {
-    background: var(--type-fighting);
-}
-
-.type-poison,
-.type-btn.type-poison {
-    background: var(--type-poison);
-}
-
-.type-ground,
-.type-btn.type-ground {
-    background: var(--type-ground);
-    color: #333;
-}
-
-.type-flying,
-.type-btn.type-flying {
-    background: var(--type-flying);
-}
-
-.type-psychic,
-.type-btn.type-psychic {
-    background: var(--type-psychic);
-}
-
-.type-bug,
-.type-btn.type-bug {
-    background: var(--type-bug);
-}
-
-.type-rock,
-.type-btn.type-rock {
-    background: var(--type-rock);
-}
-
-.type-ghost,
-.type-btn.type-ghost {
-    background: var(--type-ghost);
-}
-
-.type-dragon,
-.type-btn.type-dragon {
-    background: var(--type-dragon);
-}
-
-.type-dark,
-.type-btn.type-dark {
-    background: var(--type-dark);
-}
-
-.type-steel,
-.type-btn.type-steel {
-    background: var(--type-steel);
-    color: #333;
-}
-
-.type-fairy,
-.type-btn.type-fairy {
-    background: var(--type-fairy);
-}
-
-
-
-
-
-
-
-
+.type-normal, .type-btn.type-normal { background: var(--type-normal); }
+.type-fire, .type-btn.type-fire { background: var(--type-fire); }
+.type-water, .type-btn.type-water { background: var(--type-water); }
+.type-electric, .type-btn.type-electric { background: var(--type-electric); color: #333; }
+.type-grass, .type-btn.type-grass { background: var(--type-grass); }
+.type-ice, .type-btn.type-ice { background: var(--type-ice); color: #333; }
+.type-fighting, .type-btn.type-fighting { background: var(--type-fighting); }
+.type-poison, .type-btn.type-poison { background: var(--type-poison); }
+.type-ground, .type-btn.type-ground { background: var(--type-ground); color: #333; }
+.type-flying, .type-btn.type-flying { background: var(--type-flying); }
+.type-psychic, .type-btn.type-psychic { background: var(--type-psychic); }
+.type-bug, .type-btn.type-bug { background: var(--type-bug); }
+.type-rock, .type-btn.type-rock { background: var(--type-rock); }
+.type-ghost, .type-btn.type-ghost { background: var(--type-ghost); }
+.type-dragon, .type-btn.type-dragon { background: var(--type-dragon); }
+.type-dark, .type-btn.type-dark { background: var(--type-dark); }
+.type-steel, .type-btn.type-steel { background: var(--type-steel); color: #333; }
+.type-fairy, .type-btn.type-fairy { background: var(--type-fairy); }
 
 
 
 
 /* Pokemon Grid */
 .pokemon-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
 }
 
 .pokemon-card {
-    background: white;
-    border-radius: 20px;
-    padding: 20px;
-    text-decoration: none;
-    color: var(--text-dark);
-    transition: transform 0.3s, box-shadow 0.3s;
-    box-shadow: var(--shadow);
-    position: relative;
-    overflow: hidden;
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  text-decoration: none;
+  color: var(--text-dark);
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
 }
 
 .pokemon-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100px;
-    opacity: 0.3;
-    border-radius: 20px 20px 0 0;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  opacity: 0.3;
+  border-radius: 20px 20px 0 0;
 }
 
 /* Type Background Colors for Cards */
-.type-bg-normal::before {
-    background: var(--type-normal);
-}
-
-.type-bg-fire::before {
-    background: var(--type-fire);
-}
-
-.type-bg-water::before {
-    background: var(--type-water);
-}
-
-.type-bg-electric::before {
-    background: var(--type-electric);
-}
-
-.type-bg-grass::before {
-    background: var(--type-grass);
-}
-
-.type-bg-ice::before {
-    background: var(--type-ice);
-}
-
-.type-bg-fighting::before {
-    background: var(--type-fighting);
-}
-
-.type-bg-poison::before {
-    background: var(--type-poison);
-}
-
-.type-bg-ground::before {
-    background: var(--type-ground);
-}
-
-.type-bg-flying::before {
-    background: var(--type-flying);
-}
-
-.type-bg-psychic::before {
-    background: var(--type-psychic);
-}
-
-.type-bg-bug::before {
-    background: var(--type-bug);
-}
-
-.type-bg-rock::before {
-    background: var(--type-rock);
-}
-
-.type-bg-ghost::before {
-    background: var(--type-ghost);
-}
-
-.type-bg-dragon::before {
-    background: var(--type-dragon);
-}
-
-.type-bg-dark::before {
-    background: var(--type-dark);
-}
-
-.type-bg-steel::before {
-    background: var(--type-steel);
-}
-
-.type-bg-fairy::before {
-    background: var(--type-fairy);
-}
+.type-bg-normal::before { background: var(--type-normal); }
+.type-bg-fire::before { background: var(--type-fire); }
+.type-bg-water::before { background: var(--type-water); }
+.type-bg-electric::before { background: var(--type-electric); }
+.type-bg-grass::before { background: var(--type-grass); }
+.type-bg-ice::before { background: var(--type-ice); }
+.type-bg-fighting::before { background: var(--type-fighting); }
+.type-bg-poison::before { background: var(--type-poison); }
+.type-bg-ground::before { background: var(--type-ground); }
+.type-bg-flying::before { background: var(--type-flying); }
+.type-bg-psychic::before { background: var(--type-psychic); }
+.type-bg-bug::before { background: var(--type-bug); }
+.type-bg-rock::before { background: var(--type-rock); }
+.type-bg-ghost::before { background: var(--type-ghost); }
+.type-bg-dragon::before { background: var(--type-dragon); }
+.type-bg-dark::before { background: var(--type-dark); }
+.type-bg-steel::before { background: var(--type-steel); }
+.type-bg-fairy::before { background: var(--type-fairy); }
 
 .pokemon-card:hover {
-    transform: translateY(-10px) scale(1.02);
-    box-shadow: var(--shadow-lg);
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: var(--shadow-lg);
 }
 
 .pokemon-id {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    font-weight: 700;
-    color: rgba(0, 0, 0, 0.2);
-    font-size: 14px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 14px;
 }
 
 .pokemon-image {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .pokemon-image img {
-    width: 140px;
-    height: 140px;
-    object-fit: contain;
-    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.2));
-    transition: transform 0.3s;
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.2));
+  transition: transform 0.3s;
 }
 
-.pokemon-card:hover .pokemon-image img {
-    transform: scale(1.1);
-}
+.pokemon-card:hover .pokemon-image img { transform: scale(1.1); }
 
 .pokemon-name {
-    text-align: center;
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    text-transform: capitalize;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: capitalize;
 }
 
 .pokemon-types {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
 }
 
 .type-badge {
-    padding: 5px 12px;
-    border-radius: 15px;
-    font-size: 11px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: white;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
 }
+
+
+
+
+
+
+
