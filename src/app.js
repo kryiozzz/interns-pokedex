@@ -75,3 +75,5 @@ if (nodeEnv !== 'test') {
 
 // Export for testing
 export default app;
+
+//na sabay ang step 10 and 11 kay dli mo work ang test without step 11
